@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Daniel Kline HW8</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+<style>
+.my_col{
+    border: 1px solid green;
+    position: relative;
+}
+.my_row{
+    height: 590px;
+    
+}
+.my_p{
+    
+    position:absolute;
+    top: 50%;                         
+   transform: translate(0, -50%);
+}
+.my_image{
+   /* text-align: center;
+    margin: auto;    
+    display: block;*/
+    width: 90px;
+    height: 90px;
+    margin: auto;    
+    display: block;
+
+}
+.small_img{
+    height:200px;
+    width: 200px;
+}
+body{
+    background-color: aquamarine;
+    }
+.aaa{
+    background-color: lightgrey;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- this is for the navbar and the header-->
+ 
+
+
+<nav class="navbar-expand-md navbar-light bg-light fixed-top">
+
+
+
+
+
+
+<button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse " id="collapse_target">
+       <a href="index.html" class="nav-link"> <span class="navbar-brand">Latitude</span></a>
+    <ul class="navbar-nav ml-auto">
+       
+        
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdown_target" href="#">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                <a class="dropdown-item" href="wind.html">Windspeed</a>
+                <a class="dropdown-item" href="homer.html">Tempature</a>
+                <a class="dropdown-item" href="cloud.html">Cloudyness</a>
+                <a class="dropdown-item" href="hum.html">Humidity</a>
+                </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="compare.html">Compare</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="table.html">Data</a>
+        </li>
+
+    </ul>
+    </div>
+</nav>
+
+<!-- code for the rest of the page-->
+
+
+
+
+
+<div class="container aaa">
+    
+        <div class="row" style="position: relative; top:75px;">
+        
+                <div class="col-md-12">
+                
+                <h1>Wind Speed</h1> 
+                </div>
+            </div> 
+    
+    <div class="row my_row">
+     <div class="col-md-12 my_col">
+         <img class="my_image" src="wind.png" style="height: 500px; width: 500px;position: relative;top: 75px;">
+     </div>
+     
+    </div>
+    <div class="row">
+    <div class="col-md-12 my_col">
+        <p>There does not seem to be a coralation between the windspeed a 
+            location experiances and the latitude of a location. The scatter 
+            of the data points shows this.
+
+        </p>
+    
+    </div>
+
+    
+
+
+</div>
+
+<div class="container aaa">
+
+<div class="row">
+
+    <div class="col-md-12">
+    
+    <h1> Visualizations </h1>
+    </div>
+</div> 
+<div class="row">
+<div class="col-md-6">
+    <a href="wind.html"><img class="my_image" src="wind.png" style="height:100%; width: 100%;"></a>
+</div>
+<div class="col-md-6">
+        <a href="homer.html"><img class="my_image" src="temp.png" style="height:100%; width: 100%;"></a>
+    </div>
+
+
+</div>
+<div class="row">
+<div class="col-md-6">
+    <a href="hum.html"><img class="my_image" style="height:100%; width: 100%;" src="hum.png"></a>
+</div>
+<div class="col-md-6">
+    <a href="cloud.html"><img class="my_image" src="cloud.png" style="height:100%; width: 100%;"></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

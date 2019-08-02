@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Daniel Kline HW8</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+<style>
+.my_col{
+    border: 1px solid green;
+    position: relative;
+}
+.my_row{
+    height: 300px;
+    
+}
+.my_p{
+    
+    position:absolute;
+    top: 50%;                         
+   transform: translate(0, -50%);
+}
+.my_image{
+    text-align: center;
+    margin: auto;    
+    display: block;
+
+}
+body{
+    background-color: aquamarine;
+    }
+.aaa{
+    background-color: lightgrey;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- this is for the navbar and the header-->
+  <div class="jumbotron" style="margin-bottom: 0px;">
+    <h1>Comparison: Latitude Vs X</h1>
+    <p>Click any plot to get an in depth analysis</p>
+    </div>
+
+
+<nav class="navbar-expand-md navbar-light bg-light fixed-top">
+
+
+
+
+
+
+<button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse " id="collapse_target">
+       <a href="index.html" class="nav-link"> <span class="navbar-brand">Latitude</span></a>
+    <ul class="navbar-nav ml-auto">
+       
+        
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdown_target" href="#">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                <a class="dropdown-item" href="wind.html">Windspeed</a>
+                <a class="dropdown-item" href="homer.html">Tempature</a>
+                <a class="dropdown-item" href="cloud.html">Cloudyness</a>
+                <a class="dropdown-item" href="hum.html">Humidity</a>
+                </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="compare.html">Compare</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="table.html">Data</a>
+        </li>
+
+    </ul>
+    </div>
+</nav>
+
+
+<div class="container aaa" style="position: relative;height: 150px;">
+<div class="row">
+    <div class="col-md-12" >
+        <h4>The purpose of this webside is to show data about weather data. 
+            By clicking the links at the top of the page you can view either
+            the plots, the plots side by side, or a table of the data used to
+            make the graphs.
+        </h4>
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="container aaa">
+        <div class="row justify-content-center">
+         <div class="col-md-4 my_col">
+             <p class="my_p"> There does not seem to be any coralation between the wind speed a location experiances
+                 and the latitude of the location.
+             </p>
+         </div>
+         <div class="col-md-8 my_col">
+             <a href="wind.html"><img class="my_image" src="wind.png" style="height: 400px; width: 400px;"></a>
+         </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 my_col">
+                <p class="my_p"> There does not seem to be any coralation between the humidity a location experiances
+                        and the latitude of the location.
+                    </p>
+        </div>
+        <div class="col-md-8 my_col">
+                <a href="hum.html"><img class="my_image" src="hum.png" style="height: 400px; width: 400px;"></a>
+         
+        </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4 my_col">
+                        <p class="my_p"> There does seem to be any coralation between the tempature a location experiances
+                                and the latitude of the location.
+                            </p>
+                </div>
+                <div class="col-md-8 my_col">
+                        <a href="homer.html"><img class="my_image" src="temp.png" style="height: 400px; width: 400px;"></a>
+                 
+                </div>
+                </div>
+
+
+                <div class="row">
+                        <div class="col-md-4 my_col">
+                                <p class="my_p"> There does not seem to be any coralation between the cloudyness a location experiances
+                                        and the latitude of the location.
+                                    </p>
+                        </div>
+                        <div class="col-md-8 my_col">
+                                <a href="cloud.html"><img class="my_image" src="cloud.png" style="height: 400px; width: 400px;"></a>
+                         
+                        </div>
+                        </div>
+        
+    
+    </div>
+
+    
+</body>
+</html>
