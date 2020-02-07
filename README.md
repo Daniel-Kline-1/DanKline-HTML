@@ -4,7 +4,7 @@ Weather Vs Latitude
 
 This repository is diployed to the link below
 
-https://thedankline.github.io/DanKline-HW-HTML/index.html
+https://thedankline.github.io/DanKline-HTML/index.html
 
 
 I compair different city's latitude to different weather metrics to see if there
